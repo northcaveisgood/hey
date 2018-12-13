@@ -1,5 +1,13 @@
-client.on('ready',async () => { client.channels.find(ch => ch.id === "517598553502121986" && ch.type === 'voice').join(); });
-   console.log('')
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const prefix = 'البرفيكس حق البوت'
+ 
+ 
+ 
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`LastCodes4Ever  `,"https://www.twitch.tv/dggamingbot")
+  console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
   console.log(`[Start] ${new Date()}`);
@@ -21,6 +29,7 @@ client.on('ready',async () => { client.channels.find(ch => ch.id === "5175985535
   console.log('')
   console.log('')
 });
+ 
  
  
 client.login(process.env.BOT_TOKEN);
